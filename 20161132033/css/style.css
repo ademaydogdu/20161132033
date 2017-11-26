@@ -1,0 +1,78 @@
+
+
+
+
+
+
+.topbar{
+background-color: #6f8bc5;
+margin:0;
+padding:0px;
+
+}
+.topbar i {
+	color:white;
+	padding:0;
+	margin:0;
+	text-align: center;
+
+}
+.btn {
+	background-color:#000;
+}
+
+
+
+ .ort {
+margin-top:15px;
+
+ }
+
+/*#wrapper {
+
+ 	background-size: cover!important;
+    color: #fff;
+    margin-top: 80px;
+    text-align: center;
+    position: relative;
+    background:url(../img/background.jpeg);
+    background-repeat: no-repeat;
+    padding: 200px 0;
+ }*/
+
+
+
+.navbar-default 
+{	
+
+	background-color: #222;
+	
+}
+
+#wrapper {
+
+	background-size: cover!important;
+    position: relative;
+    background:url(../img/background.jpeg);
+    background-repeat: no-repeat;
+
+}
+
+input[type=text] {
+    width: 100px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../img/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 20%;
+}

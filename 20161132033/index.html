@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teknoloji Eğitim Portalı</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+  <script src="https://www.w3schools.com/lib/codemirror.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+    
+
+
+</head>
+
+<nav class="navbar navbar-inverse bg">
+  <div class="container-fluid" style="background-color: #00000054;">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+          
+    </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#"><img src="img/logos.png"><span> Eğitim Portalı</span></a></li>
+       
+        
+        <li><a href="#"><i class="fa fa-youtube-play fa-lg r"></i> Video Galeri</a></li>
+        <li><a href="#"><i class="fa fa-address-book fa-lg r"></i> Bize Ulaşın</a></li>
+        
+      </ul>
+
+
+              
+      <ul class="nav navbar-nav navbar-right">
+        <div class="nav" style="padding-top:15px;">
+        <a style="color:#fff" href="#" data-toggle="modal" data-target="#giris"><li><span class="glyphicon glyphicon-log-in" ></span> Giriş</li></a>
+        </li>
+        </div>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+         <div class="col-md-12" style="max-height:400px;" >
+            
+          <div class="container">
+            <h2 style="text-align:center; ">Ara & İzle <font color="#eab30e">Öğren</font></h2><br><br>  
+          <form>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Döküman" style="height:50px;border-radius:3px; ">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit" style="height: 50px;">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+
+
+
+
+
+        <br><h4 style="text-align:center;">Hemen eğitiminize başlamak için kaydolun.</h4>
+        <div class="form-group center-block" style="width:350px;">
+          
+          <input type="text" class="form-control" id="usr" placeholder="Email" >
+
+                               
+                               <br>
+       <button type="button"  class="btn btn-primary center-block" data-toggle="modal" data-target="#kayit">Kaydol</button>
+       
+                  
+          <!--- Modal Başlangıç -->
+
+
+
+<div id="kayit" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+         
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Kapat</span></button>
+              <h4 class="modal-title" id="myModalLabel">Eğitim Portalı Kayıt</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-xs-12">
+                      <div class="well">
+                     <form id="kayit" name="kayit" method="POST" action="#" novalidate>
+                              <div class="form-group">
+                                  <label for="firstname" class="control-label">Ad Soyad</label>
+                                  <input type="text" class="form-control" id="firstname" name="firstname" value="" required title="Lütfen adınızı soyadınızı giriniz.">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label for="email" class="control-label">Email</label>
+                                  <input type="text" class="form-control" id="email" name="email" value="" required title="Lütfen mail adresinizi giriniz." placeholder="ornek@gmail.com">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label for="password" class="control-label">Şifre</label>
+                                  <input type="password" class="form-control" id="password" name="password" value="" required title="Lütfen şifrenizi giriniz.">
+                                  <span class="help-block"></span>
+                              </div>
+                              
+                              
+                              
+                              <button type="submit" class="btn btn-success btn-block">Kaydol</button>
+                              
+                          </form>
+                      </div>
+                  </div>
+                  
+              <div class="uyari" style="color:red;"></div> 
+          </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script> 
+     
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+<!-- Giriş Modal -->
+<div id="giris" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+         
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Kapat</span></button>
+              <h4 class="modal-title" id="myModalLabel">Eğitim Portalı Giriş</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-xs-6">
+                      <div class="well">
+                     <form id="loginForm" name="giris" method="POST" action="#" novalidate>
+                              <div class="form-group">
+                                  <label for="email" class="control-label">Email</label>
+                                  <input type="text" class="form-control" id="email" name="email" value="" required title="Lütfen mail adresinizi giriniz." placeholder="ornek@gmail.com">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label for="password" class="control-label">Şifre</label>
+                                  <input type="password" class="form-control" id="password" name="password" value="" required title="Please enter your password">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div id="loginErrorMsg" class="alert alert-error hide">Yanlış Kullanıcı Adı veya Şifre</div>
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" name="remember" id="remember"> Beni Hatırla
+                                  </label>
+                                  <p class="help-block">(Eğer kendi kişisel cihazınız ise önerilir.)</p>
+                              </div>
+                              <button type="submit" class="btn btn-success btn-block">Giriş</button>
+                              
+                          </form>
+                      </div>
+                  </div>
+                  <div class="col-xs-6">
+                      <p class="lead">Ücretsiz Kayıt Olabilirsiniz.</p>
+                      <ul class="list-unstyled" style="line-height: 2">
+                          <li><span class="fa fa-check text-success"></span> Ücretsiz Eğitim Videoları</li>
+                          <li><span class="fa fa-check text-success"></span> Ücretsiz Kurslar</li>
+                          
+                     
+                      </ul>
+                      <p><a data-dismiss="modal" data-toggle="modal" href="#kayit"><li>Henüz kayıt olmadıysanız kayıt olmak için tıklayın</li></a></p>
+                  </div>
+              <div class="uyari" style="color:red;"></div> 
+          </div>
+        </div>
+    </div>
+
+
+    </div>
+          </div>
+        </div>
+
+       
+
+
+     <script>
+$(function() {
+ 
+  $("form[name='giris']").validate({
+    
+    rules: {
+      
+      email: {
+        required: true,
+       
+        email: true
+      },
+      password: {
+        required: true,
+        
+      }
+    },
+   
+    messages: {
+      
+      password: {
+        required: "Lütfen şifrenizi giriniz",
+        
+      },
+      email: "Lütfen geçerli mail adresi giriniz."
+    },
+   
+    submitHandler: function(form) {
+      form.submit();
+    }
+  });
+});
+     </script>
+  
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-12">
+ 
+          <!--small cards-->
+        <div class="row">
+            <div class="col-md-4">
+            <div class="card">
+                    <div class="card-content">
+                      <div class="card-header-blue">
+                           <h1 class="card-heading">Mobil Programlama Dersleri</h1>
+                        </div>
+                        <div class="card-body">
+                        <p class="card-p">
+                                Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. 
+                                
+                            </p>
+                      </div>
+                      
+                      <nav class="nav-tabs">
+                        <a class="btn" href="#" style="margin-left:10px;color:#fff;">Başla <i class="fa fa-chevron-circle-right fa-lg" style="color:#fff;"></i></a>
+                        <ul class="nav nav-pills pull-right">
+                                <li class="card-action"><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                                <li class="card-action"><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
+                                <li class="card-action"><a href="#"><span><i class="fa fa-share-alt"></i></span></a></li>
+                                <li class="card-action"><a href="#"><span><i class="fa fa-plus"></i></span></a></li>
+                            </ul>
+                        
+                      </nav>
+                    </div>
+                </div>
+            </div>
+        <div class="col-md-4">
+          <div class="card">
+                    <div class="card-content">
+                      <div class="card-header-orange">
+                           <h1 class="card-heading">Web Programlama Dersleri</h1>
+                        </div>
+                        <div class="card-body">
+                        <p class="card-p">
+                                Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. 
+                                
+                            </p>
+                      </div>
+                      <nav class="nav-tabs">
+                        <a class="btn" href="#" style="margin-left:10px;color:#fff;">Başla <i class="fa fa-chevron-circle-right fa-lg" style="color:#fff;"></i></a>
+                        <ul class="nav nav-pills pull-right">
+                                <li class="card-action"><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                                <li class="card-action"><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
+                                <li class="card-action"><a href="#"><span><i class="fa fa-share-alt"></i></span></a></li>
+                                <li class="card-action"><a href="#"><span><i class="fa fa-plus"></i></span></a>
+                            </ul>
+                        
+                      </nav>
+                        
+                    </div>
+                </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+                    <div class="card-content">
+                      <div class="card-header-grey">
+                           <h1 class="card-heading">Masaüstü Programlama Dersleri</h1>
+                        </div>
+                        <div class="card-body">
+                        <p class="card-p">
+                                Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. 
+                                
+                            </p>
+                      </div>
+                      
+                      <nav class="nav-tabs">
+                      	 
+					<a class="btn" href="#" style="margin-left:10px;color:#fff;">Başla <i class="fa fa-chevron-circle-right fa-lg" style="color:#fff;"></i></a>
+                      	
+                        	<ul class="nav nav-pills pull-right">
+                                <li class="card-action"><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                                <li class="card-action"><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
+                                <li class="card-action"><a href="#"><span><i class="fa fa-share-alt"></i></span></a></li>
+                                <li class="card-action"><a href="#"><span><i class="fa fa-plus"></i></span></a>
+                            </ul>
+                        
+                      </nav>
+                        
+                    </div>
+                </div>
+        </div>
+        </div>
+        <!--row two-->
+         
+  </div>
+</div>
+
+
+
+
+
+<div class="col-md-12" style="margin-top:50px; ">
+
+
+
+<div class="col-md-3 pull-left" style="border-left:1px solid #ffffff29;b">
+  <div class="alt-content">
+  <div class="alt-header">
+  <h4 style="color:#fff;">Duyurular</h4>
+</div>
+  <div class="alt-body">
+    <p class="dt">11.11.2017</p>
+    <p style="color:#fff;">Teknoloji GMY GSMA Raporu Yayınlandı!</p> 
+
+  </div>
+  <nav class="nav">
+      <li class="devam pull-right"><a href="#"><span><i class="fa fa-angle-double-right">Devamını Oku</i></span></a></li>                    
+  </nav>
+<br>
+    <div class="alt-body">
+    <p class="dt">09.11.2017</p>
+    <p style="color:#fff;">Teknoloji Kürsüsü Canlı Yayın Kaydı</p> 
+
+  </div>
+  <nav class="nav">
+      <li class="devam pull-right"><a href="#"><span><i class="fa fa-angle-double-right">Devamını Oku</i></span></a></li>                    
+  </nav>
+    <br>
+    <div class="alt-body">
+    <p class="dt">06.11.2017</p>
+    <p style="color:#fff;">NGN Core Sertifikasyon Programları Başlıyor.</p> 
+
+  </div>
+  <nav class="nav">
+      <li class="devam pull-right"><a href="#"><span><i class="fa fa-angle-double-right">Devamını Oku</i></span></a></li>                    
+  </nav>
+    <br>
+    <div class="alt-body">
+    <p class="dt">06.11.2017</p>
+    <p style="color:#fff;">Genişbant IP Sistemleri Sertifikasyon Programı Başladı!</p> 
+
+  </div>
+  <nav class="nav">
+      <li class="devam pull-right"><a href="#"><span><i class="fa fa-angle-double-right">Devamını Oku</i></span></a></li>                    
+  </nav>
+
+
+ 
+
+</div>
+</div>
+<!-- SON EKLENEN VİDEOLAR BAŞLANGIÇ-->
+
+
+            <div class="col-md-3" style="border-left:1px solid #ffffff29;border-right:1px solid #ffffff29;">
+              <div class="alt-content">
+              <div class="alt-header">
+              <h4 style="color:#fff;">Son Eklenen Videolar</h4>
+            </div>
+            </div>
+
+            
+            <ul class="list-unstyled video-list-thumbs row">
+              
+             
+              
+              <li class="col-xs-11" style="margin-left:15px;">
+                <a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
+                  <img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
+                  <h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
+                  <span class="glyphicon glyphicon-play-circle"></span>
+                  <span class="duration">03:15</span>
+                </a>
+              </li>
+                <li class="col-xs-11" style="margin-left:15px;">
+                <a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
+                  <img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
+                  <h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
+                  <span class="glyphicon glyphicon-play-circle"></span>
+                  <span class="duration">03:15</span>
+                </a>
+                <div class="col-md-1 col-md-offset-4">
+                <button class="btn btn-default" style="background-color:transparent;border:none;height: 50px;" type="submit" >
+                            <i class="fa fa-arrow-down fa-lg" style="color:#fff;"></i></i>
+                          </button>
+                </div>
+              </li>
+            </ul>
+</div>
+
+<!-- SON EKLENEN EĞİTİMLER BAŞLANGIÇ-->
+
+<div class="col-md-3" style="border-right:1px solid #ffffff29;">
+              <div class="alt-content">
+              <div class="alt-header">
+              <h4 style="color:#fff;">Son Eklenen Eğitimler</h4>
+            </div>
+            </div>
+
+            
+          <div class="panel panel-default" style="background-color:#333;border:none; ">
+          <div class="panel-body">
+          <div class="row">
+
+          <ul class="demo1" style="overflow-y: hidden; height:240px;>
+
+          <li style="" class="news-item">
+           <table cellpadding="4">
+          <tbody>
+            <tr>
+          <td>
+            <img src="images/1.png" width="60" class="img-circle">
+          </td>
+          <td style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Devamını Oku...</a>
+          </td>
+          </tr>
+          </tbody>
+        </table>
+          </li>
+          <li style="" class="news-item">
+          <table cellpadding="4">
+          <tbody>
+            <tr>
+          <td>
+            <img src="images/2.png" width="60" class="img-circle">
+          </td>
+          <td style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Devamını Oku...</a>
+          </td>
+          </tr>
+          </tbody>
+        </table>
+          </li>
+          <li style="" class="news-item">
+          <table cellpadding="4">
+          <tbody><tr>
+          <td><img src="images/3.png" width="60" class="img-circle"></td>
+          <td style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Devamını Oku...</a></td>
+          </tr>
+          </tbody></table>
+          </li><li style="display:none;" class="news-item">
+          <table cellpadding="4">
+          <tbody><tr>
+          <td><img src="images/4.png" width="60" class="img-circle"></td>
+          <td style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Devamını Oku...</a></td>
+          </tr>
+          </tbody></table>
+          </li><li style="display:none;" class="news-item">
+          <table cellpadding="4">
+          <tbody><tr>
+          <td><img src="images/5.png" width="60" class="img-circle"></td>
+          <td style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Devamını Oku...</a></td>
+          </tr>
+          </tbody></table>
+          </li><li style="display:none;" class="news-item">
+          <table cellpadding="4">
+          <tbody><tr>
+          <td><img src="images/6.png" width="60" class="img-circle"></td>
+          <td style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Devamını Oku...</a></td>
+          </tr>
+          </tbody></table>
+          </li><li style="display:none;" class="news-item">
+          <table cellpadding="4">
+          <tbody><tr>
+          <td><img src="images/7.png" width="60" class="img-circle"></td>
+          <td style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Devamını Oku...</a></td>
+          </tr>
+          </tbody>
+        </table>
+          </li>
+        
+        </ul>
+          </div>
+          </div>
+
+          <div class="panel-footer" style="background-color: #333;"> 
+            <ul class="pagination pull-right" style="margin: 0px;">
+              <li><a href="#" class="prev"><span class="glyphicon glyphicon-chevron-down"></span></a>
+              </li>
+              <li>
+                <a href="#" class="next"><span class="glyphicon glyphicon-chevron-up"></span></a>
+              </li>
+            </ul>
+            <div class="clearfix">
+                </div>
+              </div>
+          </div>
+          </div>
+         
+          
+
+
+
+<!-- HABERLER BAŞLANGIÇ-->
+
+ <div class="col-md-3" style="border-right:1px solid #ffffff29;">
+              <div class="alt-content">
+              <div class="alt-header">
+              <h4 style="color:#fff;">Haberler</h4>
+            </div>
+            </div>
+
+            
+          <div class="panel panel-default" style="background-color:#333;border:none; ">
+          <div class="panel-body">
+          <div class="row">
+
+          <ul class="demo1" style="overflow-y: hidden; height:240px;>
+
+          <li style=" "="">
+           <table cellpadding="4">
+          <tbody>
+            <tr>
+          <td>
+            <img src="images/1.png" width="60" class="img-circle">
+          </td>
+          <td style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Devamını Oku...</a>
+          </td>
+          </tr>
+          </tbody>
+        </table>
+          
+          <li style="" class="news-item">
+          <table cellpadding="4">
+          <tbody>
+            <tr>
+          <td>
+            <img src="images/2.png" width="60" class="img-circle">
+          </td>
+          <td style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Devamını Oku...</a>
+          </td>
+          </tr>
+          </tbody>
+        </table>
+          </li>
+          <li style="" class="news-item">
+          <table cellpadding="4">
+          <tbody><tr>
+          <td><img src="images/3.png" width="60" class="img-circle"></td>
+          <td style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Devamını Oku...</a></td>
+          </tr>
+          </tbody></table>
+          </li><li style="display:none;" class="news-item">
+          <table cellpadding="4">
+          <tbody><tr>
+          <td><img src="images/4.png" width="60" class="img-circle"></td>
+          <td style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Devamını Oku...</a></td>
+          </tr>
+          </tbody></table>
+          </li><li style="display:none;" class="news-item">
+          <table cellpadding="4">
+          <tbody><tr>
+          <td><img src="images/5.png" width="60" class="img-circle"></td>
+          <td style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Devamını Oku...</a></td>
+          </tr>
+          </tbody></table>
+          </li><li style="display:none;" class="news-item">
+          <table cellpadding="4">
+          <tbody><tr>
+          <td><img src="images/6.png" width="60" class="img-circle"></td>
+          <td style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Devamını Oku...</a></td>
+          </tr>
+          </tbody></table>
+          </li><li style="display:none;" class="news-item">
+          <table cellpadding="4">
+          <tbody><tr>
+          <td><img src="images/7.png" width="60" class="img-circle"></td>
+          <td style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Devamını Oku...</a></td>
+          </tr>
+          </tbody>
+        </table>
+          </li>
+        
+        </ul>
+          </div>
+          </div>
+
+          <div class="panel-footer" style="background-color: #333;"> 
+            <ul class="pagination pull-right" style="margin: 0px;">
+              <li><a href="#" class="prev"><span class="glyphicon glyphicon-chevron-down"></span></a>
+              </li>
+              <li>
+                <a href="#" class="next"><span class="glyphicon glyphicon-chevron-up"></span></a>
+              </li>
+            </ul>
+            <div class="clearfix">
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+
+
+
+  <div class="col-md-12" style="border-top:1px solid #ffffff29;">
+    <div class="row">
+    <section style="height:80px;"></section>
+  
+    
+    <footer class="footer-bs">
+        <div class="row">
+          <div class="col-md-3 footer-brand animated fadeInLeft">
+              
+
+                <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+                <p>© 2014 BS3 UI Kit, All rights reserved</p>
+            </div>
+          <div class="col-md-4 footer-nav animated fadeInUp">
+              <h4>Menü —</h4>
+              <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Mobil Programlama</a></li>
+                        <li><a href="#">Web Programlama</a></li>
+                        <li><a href="#">Masaüstü Programlama</a></li>
+                        <li><a href="#">Video Galeri</a></li>
+                        
+                    </ul>
+                </div>
+              <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">Bize Ulaşın</a></li>
+                        
+                        <li><a href="#">Şartlar ve Koşullar</a></li>
+                        <li><a href="#">Gizlilik Politikası</a></li>
+                    </ul>
+                </div>
+            </div>
+          <div class="col-md-2 footer-social animated fadeInDown">
+              <h4>Follow Us</h4>
+              <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">RSS</a></li>
+                </ul>
+            </div>
+          <div class="col-md-3 footer-ns animated fadeInRight">
+              <h4>Bülten</h4>
+                <p>Yeni eklenen eğitimlerden haberdar olmak için kaydolun.</p>
+                <p>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Email...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                 </p>
+            </div>
+        </div>
+    </footer>
+    <section style="text-align:center; margin:10px auto;"><p style="color:#222">Copyright ©2017 Adem Aydoğdu</p></section>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
